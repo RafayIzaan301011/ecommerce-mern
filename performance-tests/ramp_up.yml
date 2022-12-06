@@ -1,0 +1,17 @@
+config:
+  target: "http://localhost:5000"
+  phases:
+    - duration: 200
+      arrivalRate: 10
+      rampTo: 300
+      name: "Ramping up"
+ 
+scenarios:
+  - name: "query price range"
+    flow:
+      - get:
+          url: "/api/products/"
+          qs:
+            order: 'lowest'
+   
+   

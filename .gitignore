@@ -6,7 +6,6 @@ node_modules
 # testing
 /coverage
 
-/performance-tests/ramp_up.yml
 /performance-tests/sustain.yml
 
 # production
